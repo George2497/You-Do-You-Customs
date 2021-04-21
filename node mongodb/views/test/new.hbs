@@ -1,0 +1,26 @@
+<div class='form-group'>
+    <form action="/test/new" method="POST">
+        <label for="qty"><strong><u>Item Quantity</u></strong></label><br>
+        <input type="text" id="qty" name="itemQuantity" placeholder="How many items??" required><br><br>
+        <div class="submitbtn">
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<form action="/test/create" method="POST">
+    <li><label>Name</label>
+        <input type='text' class='form-controll' name="name" placeholder="Name">
+    </li>
+    {{#each quantity}}
+    <li><label>Item</label>
+        <input type='text' class='form-controll' name="item" placeholder="Apples">
+    </li>
+    <li><label>Quantity</label>
+        <input type='text' class='form-controll' name="quantity" placeholder="0">
+    </li>
+    {{/each}}
+        <div class="submitbtn">
+        <button type="submit" value="submit">Submit</button>
+    </div>
+</form>
